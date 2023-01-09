@@ -116,3 +116,11 @@ let finances = [
 		}
 
 		average = changeTotal / (finances.length - 1);
+
+console.log("Financial Analisys");
+console.log("-------------------------")
+console.log("Total Months:" + numberOfMonths);
+console.log("Total: $" + total);
+console.log(`Average Change: $${average}`);
+console.log(`Greatest Increase in Profits: ${greatestIncrease[0]} ($${greatestIncrease[1]})`);
+console.log(`Greatest Decrease in Profits: ${greatestDecrease[0]} ($${greatestDecrease[1]})`);
