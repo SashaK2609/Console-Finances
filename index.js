@@ -114,3 +114,5 @@ let finances = [
 			changeTotal += profitLoss - finances[i-1][1];
 			}
 		}
+
+		average = changeTotal / (finances.length - 1);
