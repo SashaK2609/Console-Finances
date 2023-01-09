@@ -110,3 +110,7 @@ let finances = [
 			greatestDecrease = finances[i];
 		}
 
+		if (i > 0) {
+			changeTotal += profitLoss - finances[i-1][1];
+			}
+		}
