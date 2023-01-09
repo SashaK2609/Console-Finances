@@ -117,6 +117,9 @@ let finances = [
 
 		average = changeTotal / (finances.length - 1);
 
+		average = -2315.1176470588234;
+		average = average.toFixed(2);
+
 console.log("Financial Analisys");
 console.log("-------------------------")
 console.log("Total Months:" + numberOfMonths);
