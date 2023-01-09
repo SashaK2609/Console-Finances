@@ -87,14 +87,26 @@ let finances = [
 	['Feb-2017', 671099]
 	];
 
-	console.log(finances.length);
+	finances.length
 
 	const numberOfMonths = finances.length;
 	let total = 0;
 	let average = 0;
 	let greatestIncrease = finances[0];
-	let greatestDicrease = finances[0];
+	let greatestDecrease = finances[0];
+	let changeTotal = 0;
+	
 
 	for (let i = 0; i < finances.length; i++) {
 		const profitLoss = finances[i][1];
-	}
+
+		total = total + profitLoss;
+
+		if (greatestIncrease[1] < profitLoss) {
+			greatestIncrease = finances[i];
+		}
+
+		if (greatestDecrease[1] > profitLoss) {
+			greatestDecrease = finances[i];
+		}
+
