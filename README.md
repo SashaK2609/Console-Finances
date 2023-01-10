@@ -17,6 +17,9 @@ In this project JS file, named index.js, already contained a code. It was a 2DAr
 * the average change from month to month and and total average itself.
 
 After all calculations console messages look like that:
+
+
+
 ![alt text](Images/Console.png)
 
 ### Credits
