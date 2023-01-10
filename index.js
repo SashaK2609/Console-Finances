@@ -87,8 +87,10 @@ let finances = [
 	['Feb-2017', 671099]
 	];
 
+	//Defined how many elements (length) of the finances array
 	finances.length
 
+	//Defined veriables, that are going to be used during coding
 	const numberOfMonths = finances.length;
 	let total = 0;
 	let average = 0;
@@ -97,26 +99,36 @@ let finances = [
 	let changeTotal = 0;
 	
 
+	//Used for loop to iterate 'finances' array starting from 0 element
 	for (let i = 0; i < finances.length; i++) {
-		const profitLoss = finances[i][1];
+		const profitLoss = finances[i][1]; 
 
-		total = total + profitLoss;
 
+		// Total amount of Profit/Losses over the entire period
+		total = total + profitLoss; 
+
+
+		//As if condition is in the for loop, it will go through each array element and will stop on true condition when Greatest Increase value is less than Profit/Loss value
 		if (greatestIncrease[1] < profitLoss) {
-			greatestIncrease = finances[i];
+			greatestIncrease = finances[i];   
 		}
 
+
+		//As if condition is in the for loop, it will go through each array element and will stop on true condition when Greatest Increase value is bigger than Profit/Loss value
 		if (greatestDecrease[1] > profitLoss) {
-			greatestDecrease = finances[i];
+			greatestDecrease = finances[i];  
 		}
 
+		//Tracking changes from month to month, assuming the first element stays the same
 		if (i > 0) {
 			changeTotal += profitLoss - finances[i-1][1];
 			}
 		}
 
+		//Exluding one element (period) in calculations due to comparison of one element to the previous
 		average = changeTotal / (finances.length - 1);
 
+		//rounded the number of Average Change to decimal places
 		average = -2315.1176470588234;
 		average = average.toFixed(2);
 
